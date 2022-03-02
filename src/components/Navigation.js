@@ -53,10 +53,7 @@ const theme = useTheme();
             </Link>
           </div>)}
       </Toolbar>
-    </AppBar>
-
-   
+    </AppBar>   
   );
 }
-
 export default MatHeader
