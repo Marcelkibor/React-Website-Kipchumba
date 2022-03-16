@@ -1,49 +1,52 @@
-import { Container } from '@mui/material'
-import { Box } from '@mui/material'
-import { Link } from '@mui/material'
-import { Grid } from '@mui/material'
-import React from 'react'
+import { Container } from '@mui/material';
+import { Box } from '@mui/material';
+import { Link } from '@mui/material';
+import { Grid } from '@mui/material';
+import footerImage2 from '../resources/footer2.jpg';
+import React from 'react';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import { makeStyles } from '@material-ui/core';
+import { display, width } from '@mui/system';
+// custom functions
+const customStyles = makeStyles((theme)=>({
+  mainfooterBox:{
+color:'white',
+backgroundColor:'#2d3436',
+backgroundImage: `url(${footerImage2})`,
+backgroundSize:'cover',
+// [theme.breakpoints.only('xs')]:{
+//   backgroundImage: `url(${footerImage2})`,
+// }
+  },
 
+}))
 function Footer() {
+const classes = customStyles();
   return (
-<Box bgcolor="text.secondary" color="white">
-<Container maxWidth ='lg'>
-<Grid container spacing={5}>
-<Grid item xs ={12} sm ={4}>
-<Box borderBottom={1}><b style={{fontSize:'20px'}}> Home</b> </Box>
-<Box>
-<Link href='/' color  ='inherit' style={{textDecoration:'none'}}>About Us</Link>
+<Box className = {classes.mainfooterBox}>
+<div>
+<Box className='footerHeaders'><b style={{fontSize:'20px',fontFamily: "Garamond, serif"}}> Quick Links</b> </Box>
+<Box className='footerLinks'>
+<Link href='#agenda' color  ='inherit' style={{textDecoration:'none',fontFamily:'Roboto,"Helvetica Neue",sans-serif'}}>Agenda</Link>
 </Box>
-<Box>
-<Link href='/' color  ='inherit' style={{textDecoration:'none'}}>Send Private Request</Link>
+<Box className='footerLinks'>
+<Link href='#banner' color  ='inherit' style={{textDecoration:'none',fontFamily:'Roboto,"Helvetica Neue",sans-serif'}}>Contact</Link>
 </Box>                
-</Grid>
-<Grid item xs ={12} sm ={4}>
-<Box borderBottom={1}> <b style={{fontSize:'20px'}}> Book Room</b></Box>
-<Box>
-<Link href='/' color  ='inherit' style={{textDecoration:'none'}}>Single BnB</Link>
+</div><br></br>
+<div> 
+<Box className = 'footerHeaders'> <b style={{fontSize:'20px', fontFamily: "Garamond, serif"}}>Social Media Links</b></Box>
+<Box className='footerLinks'>
+  <FacebookIcon style={{color:'#0984e3', fontSize:'30px'}}/>
+  <Link href='https://web.facebook.com/' color  ='inherit' style={{textDecoration:'none',fontFamily:'Roboto,"Helvetica Neue",sans-serif'}}>Facebook</Link>
 </Box>
-<Box>
-<Link href='/' color  ='inherit'style={{textDecoration:'none'}}>Double BnBs</Link>
+<Box className='footerLinks'>
+  <TwitterIcon style={{color:'#38ada9', fontSize:'30px'}}/>
+<Link href='https://twitter.com/Rk_chumba' color  ='inherit'style={{textDecoration:'none',fontFamily:'Roboto,"Helvetica Neue",sans-serif'}}>Twitter</Link>
 </Box>                      
-</Grid>
-<Grid item xs ={12} sm ={4}>
-<Box borderBottom={1}> <b style={{fontSize:'20px'}}> Plan Vacation</b></Box>
-<Box>
-<Link href='/' color  ='inherit'style={{textDecoration:'none'}}>Send Email</Link>
+</div>
 </Box>
-<Box>
-<Link href='/' color  ='inherit'style={{textDecoration:'none'}}>Book Destination</Link>
-</Box>
-<Box>
-<h6 style={{color:'white'}}>
-<b>Kibor</b> designs &reg; {new Date().getFullYear()}  
-</h6>
-</Box>
-</Grid>
-</Grid>
-</Container>
-</Box>
+
   )
 }
 export default Footer

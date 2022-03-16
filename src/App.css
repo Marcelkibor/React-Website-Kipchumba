@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+*{
+  padding: 0% 0% 0% 0% !important;
+  margin: 0% 0% 0% 0% !important;
+  box-sizing: border-box !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.generalcardsRow{
+  padding: 0% 0% 5% 3% !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.generalcardsRow{
+padding: 2% 1.5% 0% 1.5% !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.customFooter{
+  padding:0% 0% 0% 0% !important;
+  /* background-color: white; */
 }
-
-.App-link {
-  color: #61dafb;
+.carousel_row{
+  padding: 2% 1.5% 2% 1.5% !important;
+  background-color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carouselCard{
+padding:0% 0% 0% 4% !important;
+width: 100% !important;
+height: 100px;
+}
+.carouselImages{
+  height: 50vh !important;
+  width: 50vw !important;
+}
+.carouselImagesSmall{
+  width: 100vw!important;
+  height: 50vh!important;
+}
+.top_updatetext{
+padding: 0% 0% 3% 0% !important;
+}
+.footerLinks{
+  padding-left: 1% !important;
+}
+.footerHeaders{
+  padding-left: 0.5% !important;
 }

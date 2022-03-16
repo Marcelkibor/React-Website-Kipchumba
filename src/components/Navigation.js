@@ -1,59 +1,49 @@
 import React from 'react'
-import {
-    AppBar,
-    Toolbar,
-    CssBaseline,
-    Typography,
-    makeStyles,
-  } from "@material-ui/core";
-import { Link, BrowserRouter as Router , Switch} from "react-router-dom";
-import { useTheme } from '@mui/material/styles';
-import DrawerComponent from './DrawerComponent';
-import { useMediaQuery } from '@material-ui/core';
-const useStyles = makeStyles((theme) => ({
-navlinks: {
-marginLeft: theme.spacing(10),
-display: "flex",
-padding:"0% 18% 0% 0%",
+import '../App.css'
+import {Navbar,Nav} from 'react-bootstrap';
+import uda from '../resources/uda.png'
+import { useState } from 'react';
+import {makeStyles } from '@material-ui/core';
+
+const myStyles = makeStyles((theme) => ({
+custom_navbar:{
+backgroundColor: '#009432',
+minHeight: '80px',
+paddingLeft:'inherit',
 },
-logo: {
-flexGrow: "1",
-cursor: "pointer",
-[theme.breakpoints.down('md')]:{
-}
-},
-link: {
-textDecoration: "none",
-color: "white",
-fontSize: "20px",
-marginLeft: theme.spacing(10),
-"&:hover": {
-color: "yellow",
-textDecoration:"none"
-},
+navbar_active:{
+  backgroundColor: '#2ecc71',
 },
 }));
-function MatHeader() {
-const classes = useStyles();
-const theme = useTheme();
- const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+function Navigate() {
+const [navbar,setNavbar] = useState(false);
 
+
+
+// start of usestate
+// const changeNavbackground = ()=>{
+// if(window.scrollY>=90){
+//   setNavbar(true);
+// }else{
+//   setNavbar(false);
+// }
+// }
+// window.addEventListener('scroll',changeNavbackground);
+const classes = myStyles();
   return (
- <AppBar position="static" style={{backgroundColor:'#2ecc71',padding:'2% 0% 1% 3%'}}> 
-      <Toolbar>
-        <Typography variant="h4" className={classes.logo}>
-          Ronald Kipchumba 
-        </Typography>
-        {isMobile ? (
-          <DrawerComponent />
-        ) : (
-          <div className={classes.navlinks}>
-            <Link to="/home" className={classes.link}>
-              Home
-            </Link>
-          </div>)}
-      </Toolbar>
-    </AppBar>   
-  );
+    <div id ='navigation'>
+  <Navbar expand="lg" className = {classes.custom_navbar}>
+  <Navbar.Brand href="/"><h4 style={{color:'white'}}>&nbsp;&nbsp;&nbsp;<img src={uda} className = 'img-fluid'style={{height:'90px'}}/> Ronald Kipchumba </h4></Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav" style ={{magin:'25%'}}>  
+  <Nav className="mr-auto items_spacer" >
+<Nav.Link  href="#agenda"className ='nav_items'>Agenda</Nav.Link>
+<Nav.Link  href="#updates"className ='nav_items'>Updates</Nav.Link> 
+  <Nav.Link  href="#prog"className ='nav_items'>Programs</Nav.Link>  </Nav>  
+  </Navbar.Collapse>
+  </Navbar>
+  </div>
+  )
 }
-export default MatHeader
+
+export default Navigate
