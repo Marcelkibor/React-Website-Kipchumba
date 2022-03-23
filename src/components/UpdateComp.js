@@ -4,7 +4,7 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import straw from '../resources/straw.jpg';
 import { useState } from 'react';
-import ova from '../resources/ova.jpg';
+import ova from '../resources/ova.png';
 import '../App.css'
 import pas from '../resources/pas.jpg'
 import { Row,Col } from 'react-bootstrap';
