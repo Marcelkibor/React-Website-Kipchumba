@@ -93,8 +93,8 @@ className ='carouselImagesSmall img-fluid'/>
 <Card className='carouselCard'>
 <CardContent>
 <Typography style={{textAlign:'left'}}>
-<b>The journey</b> to branch from consumer based farming to income generation is already underway.
-Mosop is blessed with fertile land that supports various income generating cash crops.
+<b>The journey</b> to branch from consumer based farming 
+to income generation is already underway.
 </Typography>
 </CardContent>
 </Card>
@@ -107,7 +107,7 @@ className = 'carouselImagesSmall img-fluid'/>
 <CardContent>
 <Typography style={{textAlign:'left'}}>
 <b>The future</b> of technology is with the young generation. 
-Our plan is to bring technology closer to all students who are unexposed or have unlimited access to computers.
+Our plan is to bring technology closer to all  unexposed students.
 </Typography>
 </CardContent>
 </Card>
@@ -119,8 +119,8 @@ className = 'carouselImagesSmall img-fluid'/>
 <Card className='carouselCard'>
 <CardContent>
 <Typography style={{textAlign:'left'}}>
-<b>Our 5 year plan is to </b> incorporate proper leadership on all on-going, pending and completed projects.
-With proper accountability, Mosop stands a real chance of realizing it's true potential
+<b>Our 5 year plan is to </b> incorporate proper leadership on all on-going,
+ pending and completed projects.
 </Typography>
 </CardContent>
 </Card>
