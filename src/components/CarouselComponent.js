@@ -85,7 +85,7 @@ With proper accountability, Mosop stands a real chance of realizing it's true po
 </div>
 </Carousel>
 {/* second carousel for smaller devices */}
-<Carousel  autoPlay interval="6000" transitionTime="1000" showThumbs={false} className = 'mainCarousel'>
+<Carousel  autoPlay interval="6000" transitionTime="1000" showThumbs={false} className = 'smallerCarousel'>
 <div className={classes.componentSpacerSmall}>
 <img 
 src={car1}
