@@ -1,5 +1,4 @@
 import React from 'react'
-import '../App.css'
 import {Navbar,Nav} from 'react-bootstrap';
 import uda from '../resources/uda.png'
 import { useState } from 'react';
@@ -9,26 +8,21 @@ const myStyles = makeStyles((theme) => ({
 custom_navbar:{
 backgroundColor: '#009432',
 minHeight: '80px',
-paddingLeft:'inherit',
 },
 navbar_active:{
   backgroundColor: '#2ecc71',
 },
 }));
+
 function Navigate() {
 const [navbar,setNavbar] = useState(false);
 
-
-
 // start of usestate
-// const changeNavbackground = ()=>{
-// if(window.scrollY>=90){
-//   setNavbar(true);
-// }else{
-//   setNavbar(false);
-// }
-// }
-// window.addEventListener('scroll',changeNavbackground);
+const changeNavbackground = ()=>{
+console.log(window.scrollY)
+}
+window.addEventListener('scroll', changeNavbackground);
+
 const classes = myStyles();
   return (
     <div id ='navigation'>

@@ -1,7 +1,7 @@
 *{
   padding: 0% 0% 0% 0% !important;
   margin: 0% 0% 0% 0% !important;
-  box-sizing: border-box !important;
+  scroll-behavior: smooth !important;
 }
 .generalcardsRow{
   padding: 0% 0% 5% 3% !important;

@@ -21,6 +21,7 @@ componentSpacer:{
 display:'none'
  },},
 componentSpacerSmall:{
+  height:'60vh',
   [theme.breakpoints.up('md')]:{
     display:'none',
   },

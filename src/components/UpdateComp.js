@@ -56,7 +56,7 @@ transform: "scale3d(1.2, 1.05, 1)",
 },
 },
 mainTypography:{
-textAlign:'center',
+textAlign:'left',
 fontSize:'20px',
 },
 updatesheaderText:{
@@ -92,7 +92,7 @@ const classes = useStyles();
 {/* Avocado card */}
 <Card className = {classes.cardSpacer} elevation = {10} >
 <h5 className='topCardsMessage'>
-<b>Afya kwa wote</b>
+<b>Equal opportunity</b>
 </h5>
 <CardMedia className={classes.imageTransform}
 height="200"
@@ -102,7 +102,7 @@ alt="bed and breakfast"
 />
 <CardContent >
 <Typography className={classes.mainTypography}>
-Natured carefully and selection is done from only the finest ones.
+Equal opportunity to everyone regardless of their beliefs, background or social status.
 </Typography>
 </CardContent>
 <CardActions disableSpacing>
@@ -126,7 +126,7 @@ aria-label=" Rooms Prices">
 {/* Strawbaerry card. */}
 <Card className = {classes.cardSpacer} elevation = {10}>
 <h5>
-<b>Kilimo Bora</b>
+<b>Improved healthcare</b>
 </h5>
 <CardMedia className={classes.imageTransform}
 component="img"
@@ -136,7 +136,7 @@ alt="Paella dish"
 />
 <CardContent>
 <Typography className={classes.mainTypography}>
-Natured carefully and selection is done from only the finest ones.
+Cheap and accessible medical services is one of my primary objectives.
 </Typography>
 </CardContent>
 <CardActions disableSpacing>
@@ -160,7 +160,7 @@ aria-label="show more">
 <Col className= 'generalcardsRow'>
 <Card className = {classes.cardSpacer} elevation = {10}>
 <h5>
-<b>Maendeleo za kisasa</b>
+<b>Quality Education</b>
 </h5>
 <CardMedia className={classes.imageTransform}
 component="img"
@@ -169,7 +169,7 @@ image = {pas}
 alt="Paella dish"/>
 <CardContent>
 <Typography className={classes.mainTypography}>
-It is easy to incorporate this fruit into a nutritious diet in multiple ways </Typography>
+Government and donor funds will be put to develop state of the art classes, laboratories and libraries </Typography>
 </CardContent>
 <CardActions disableSpacing>
 <ExpandMore
