@@ -114,12 +114,6 @@ aria-label=" Rooms Prices">
 <ExpandMoreIcon />
 </ExpandMore>
 </CardActions>
-<Collapse in={expanded} timeout="auto" unmountOnExit>
-<CardContent>
-<Typography paragraph><b>Pricing :</b> Per Kg <b>300 </b></Typography>  
-<Typography paragraph><b>Variety:</b> Hass</Typography>    
-</CardContent>
-</Collapse>
 </Card>
 </Col>
 <Col className= 'generalcardsRow'>
@@ -148,12 +142,6 @@ aria-label="show more">
 <ExpandMoreIcon />
 </ExpandMore>
 </CardActions>
-<Collapse in={expanded} timeout="auto" unmountOnExit>
-<CardContent>
-<Typography paragraph><b>Pricing :</b> Per Palette < b>100</b></Typography>  
-<Typography paragraph><b>Variety:</b> Chandelier Strawberry</Typography>     
-</CardContent>
-</Collapse>
 </Card> 
 </Col>
 {/* Passion card done*/ }
@@ -180,12 +168,6 @@ aria-label="show more">
 <ExpandMoreIcon />
 </ExpandMore>
 </CardActions>
-<Collapse in={expanded} timeout="auto" unmountOnExit>
-<CardContent>
-<Typography paragraph><b>Pricing :</b> Per Kg <b>300</b></Typography>  
-<Typography paragraph><b>Variety:</b> Hass</Typography>  
-</CardContent>
-</Collapse>
 </Card> 
 </Col>
 </Row>
